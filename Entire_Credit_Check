@@ -1,3 +1,23 @@
+To create a file
+'''
+ob=open(r'C:\Python27\avi_file_handling\cred.txt','w')
+ob.write("Number" + "-" + "Username" + ":" + "Password" + '\n')
+i=0
+for x in range(5):
+    uid=raw_input("Please enter your username to login\n")
+    pswd=raw_input("Please enter your password {} to login\n".format(uid))
+    ob.write(str(i) + "     " "-" " " + uid + " : " + pswd + '\n')
+    i=i+1
+    
+    
+ob.close()
+...
+
+
+
+
+
+
 ob=open(r'C:\Python27\avi_file_handling\cred1.txt','r')
 uid=raw_input("Please enter your username to login\n")
 pswd=raw_input("Please enter your password {} to login\n".format(uid))
